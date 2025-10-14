@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heal U Wellness</title>
+  <style>
+/* Heal U Wellness - Soft Sage & Mauve Accent Palette */
+
+:root {
+  --cream: #f7f4f1;
+  --petal: #f5f6f2;
+  --blush: #e6ebdf;
+  --orchid: #dcd4db; /* neutral mauve accent */
+  --mauve: #bfb6bd;
+  --deep-mauve: #6b7b58; /* grounded sage */
+  --sand: #dfe7d2;
+  --white: #ffffff;
+  --charcoal: #2f2b2d;
+  --text-muted: #70776a;
+  --shadow: 0 18px 38px rgba(107, 123, 88, 0.16);
+  --radius: 18px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  background: var(--cream);
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding: 0 1.5rem 4rem;
+}
+
+section {
+  padding: 4rem 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background: var(--petal);
+  border-bottom: 1px solid var(--blush);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem;
+}
+
+.brand-logo {
+  width: 208px;
+  min-width: 160px;
+}
+
+.main-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--sand);
+  box-shadow: 0 8px 22px rgba(47, 43, 45, 0.05);
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: 600;
+  color: var(--deep-mauve);
+}
+
+.main-nav a {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background: var(--blush);
+  color: var(--charcoal);
+}
+
+.hero {
+  background: linear-gradient(140deg, rgba(205, 214, 196, 0.3), rgba(255, 255, 255, 0.9));
+  border-radius: var(--radius);
+  padding: 4rem;
+  box-shadow: var(--shadow);
+}
+
+.intro-banner {
+  position: relative;
+  background: url("assets/hero-orchid-banner.png") center/cover no-repeat;
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  margin: 2.5rem auto 0;
+  max-width: 1100px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 18px 42px rgba(107, 123, 88, 0.2);
+}
+
+.intro-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(247, 245, 241, 0.92), rgba(107, 123, 88, 0.18));
+}
+
+.banner-content {
+  position: relative;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 1.8rem 2.6rem;
+  border-radius: var(--radius);
+  color: var(--deep-mauve);
+  border: 1px solid var(--orchid);
+  box-shadow: 0 14px 26px rgba(220, 213, 219, 0.32);
+}
+
+.banner-content h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.banner-content p {
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero-copy h2 {
+  font-size: 2.4rem;
+  margin: 0 0 1rem;
+  color: var(--deep-mauve);
+  letter-spacing: 0.01em;
+}
+
+.hero-copy .lead {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 520px;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--deep-mauve);
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 12px 24px rgba(107, 123, 88, 0.22);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(107, 123, 88, 0.26);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--deep-mauve);
+  color: var(--deep-mauve);
+  box-shadow: none;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background: rgba(107, 123, 88, 0.1);
+}
+
+.hero-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  border: 1px solid var(--blush);
+  box-shadow: var(--shadow);
+  color: var(--text-muted);
+}
+
+.hero-card h3 {
+  margin: 0 0 0.75rem;
+  color: var(--deep-mauve);
+  font-size: 1.2rem;
+}
+
+.stat-blocks {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.stat-block {
+  min-width: 160px;
+  background: var(--white);
+  border: 1px solid var(--blush);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(205, 214, 196, 0.22);
+}
+
+.stat-block .value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--deep-mauve);
+}
+
+.stat-block span:last-child {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+section > h2 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  color: var(--deep-mauve);
+}
+
+section > p {
+  color: var(--text-muted);
+  max-width: 620px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.8rem;
+}
+
+.benefits .container {
+  position: relative;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  border: 1px solid var(--blush);
+  color: var(--text-muted);
+  box-shadow: 0 16px 30px rgba(171, 185, 159, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 40px rgba(171, 185, 159, 0.16);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--deep-mauve);
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.benefits .card {
+  position: relative;
+  overflow: hidden;
+  color: var(--charcoal);
+  border: none;
+  box-shadow: 0 16px 34px rgba(171, 185, 159, 0.18);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.2rem;
+  backdrop-filter: blur(1px);
+}
+
+.benefits .card:nth-child(1) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/2.png");
+}
+
+.benefits .card:nth-child(2) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/3.png");
+}
+
+.benefits .card:nth-child(3) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/4.png");
+}
+
+.benefits .card:nth-child(4) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/5.png");
+}
+
+.benefits .card:nth-child(5) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/6.png");
+}
+
+.benefits .card:nth-child(6) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/7.png");
+}
+
+.tech-highlight,
+.membership-offer,
+.contact-card,
+form {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--blush);
+  padding: 2rem;
+  box-shadow: 0 12px 26px rgba(205, 214, 196, 0.22);
+  color: var(--text-muted);
+}
+
+form {
+  margin: 0;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+label {
+  font-weight: 600;
+  color: var(--deep-mauve);
+  letter-spacing: 0.02em;
+}
+
+input,
+textarea {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--sand);
+  border-radius: 12px;
+  font-family: inherit;
+  background: var(--petal);
+  color: var(--charcoal);
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid rgba(107, 123, 88, 0.24);
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-card a {
+  color: var(--deep-mauve);
+  font-weight: 600;
+}
+
+.membership-offer a {
+  margin-top: 1rem;
+}
+
+footer {
+  background: var(--deep-mauve);
+  color: var(--white);
+  text-align: center;
+  padding: 2.2rem 1.5rem;
+}
+
+footer a {
+  color: var(--white);
+  font-weight: 600;
+}
+
+footer p {
+  margin: 0.4rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2.5rem;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 170px;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .intro-banner {
+    margin-top: 2rem;
+    min-height: 220px;
+  }
+
+  .banner-content {
+    padding: 1.4rem 2rem;
+  }
+
+  .banner-content h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 0 1rem 3rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+
+  .banner-content {
+    padding: 1.2rem 1.6rem;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <img src="assets/heal-u-wellness-logo.png" alt="Heal U Wellness red light therapy logo" class="brand-logo">
+    </div>
+  </header>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#bookings">Bookings</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="intro-banner">
+    <div class="banner-content">
+      <h2>Heal U Wellness</h2>
+      <p>Red light therapy with narrow light technology</p>
+    </div>
+  </div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h2>Revive. Rejuvenate. Restore.</h2>
+          <p class="lead">Experience a wellness sanctuary where state-of-the-art red light technology accelerates recovery, brightens skin, and calms your nervous system in one soothing session.</p>
+          <div class="cta">
+            <a href="#bookings" class="btn">Book now</a>
+            <a href="#technology" class="btn btn-outline">Why it works</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Now booking: Intro trio</h3>
+          <p>Three personalized sessions designed to reset your glow, soothe sore muscles, and help you settle into restorative calm.</p>
+          <p><strong>Includes:</strong> guided breathwork, tailored light intensity, and a post-session recovery roadmap.</p>
+        </div>
+      </div>
+      <div class="stat-blocks">
+        <div class="stat-block">
+          <span class="value">12 min</span>
+          <span>Average session</span>
+        </div>
+        <div class="stat-block">
+          <span class="value">4-6x</span>
+          <span>Faster recovery</span>
+        </div>
+        <div class="stat-block">
+          <span class="value">92%</span>
+          <span>Client satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <h2>Benefits of Red Light Therapy</h2>
+      <div class="container">
+        <div class="card">Boosts collagen production for firmer, brighter skin.</div>
+        <div class="card">Calms inflammation and soothes chronic pain.</div>
+        <div class="card">Accelerates muscle recovery post-training.</div>
+        <div class="card">Enhances circulation and oxygen delivery.</div>
+        <div class="card">Supports joint health and mobility.</div>
+        <div class="card">Improves sleep quality by balancing circadian rhythm.</div>
+        <div class="card">Eases seasonal mood dips with gentle light exposure.</div>
+        <div class="card">Energizes cells to speed post-injury tissue repair.</div>
+      </div>
+    </section>
+
+    <section id="treatments">
+      <h2>Signature Sessions</h2>
+      <div class="container">
+        <div class="card">
+          <h3>Glow Reset</h3>
+          <p>Targeted red and near-infrared light for enhanced collagen, elasticity, and skin tone.</p>
+          <ul>
+            <li>Ideal before events or photo sessions</li>
+            <li>Boosts complexion clarity</li>
+            <li>Pairs well with lymphatic drainage</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Recover Strong</h3>
+          <p>Deep-tissue protocol to accelerate muscle repair and reduce aches after workouts.</p>
+          <ul>
+            <li>Relieves soreness and stiffness</li>
+            <li>Supports endurance training cycles</li>
+            <li>Custom light intensity per zone</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Calm & Restore</h3>
+          <p>Nervous system reset with guided breathwork, soundscapes, and restorative light.</p>
+          <ul>
+            <li>Balances cortisol levels</li>
+            <li>Encourages deep relaxation</li>
+            <li>Complements meditation practice</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology">
+      <h2>Inside Our Technology</h2>
+      <p>Our medical-grade panels combine red (660 nm) and near-infrared (850 nm) wavelengths to activate your mitochondria and stimulate circulation exactly where your body needs it.</p>
+      <div class="tech-highlight">
+        <p><strong>Dual spectrum delivery:</strong> Calibrated light penetrates multiple tissue depths to trigger cellular repair while our smart cooling keeps every session comfortable.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Membership Perks</h2>
+      <ul>
+        <li>Preferred scheduling and session rollover</li>
+        <li>Complimentary monthly wellness consult</li>
+        <li>Exclusive infrared contrast therapy pop-ups</li>
+        <li>Member pricing on add-on services and retail</li>
+      </ul>
+      <div class="membership-offer">
+        <h3>Founding Member Special</h3>
+        <p>Lock in 4 sessions monthly and save 20% for the first six months.</p>
+        <a href="#bookings" class="btn">Claim offer</a>
+      </div>
+    </section>
+
+    <section id="bookings">
+      <h2>Book Your Session</h2>
+      <p>Choose your experience online in under a minute, or call us to craft a custom protocol.</p>
+      <div class="cta">
+        <a href="#" class="btn">View availability</a>
+        <a href="tel:0724822593" class="btn btn-outline">Call 072 482 2593</a>
+      </div>
+      <p>New to red light therapy? Ask about our intro trio for first-timers.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Visit or Reach Out</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Durbanville Hills Studio</h3>
+          <p>2 Morgenster Rd<br>Durbanville Hills, 7550</p>
+          <p><a href="mailto:Debbie@healuwellness.co.za">Debbie@healuwellness.co.za</a><br><a href="tel:0724822593">072 482 2593</a></p>
+        </div>
+        <form>
+          <h3>Ask anything</h3>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Your name">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Your email">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Heal U Wellness. All rights reserved.</p>
+    <p><a href="#top" class="btn btn-outline">Back to top</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
