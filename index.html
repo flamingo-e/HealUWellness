@@ -48,11 +48,11 @@ a {
 }
 
 main {
-  padding: 0 1.5rem 4rem;
+  padding: 0 1.5rem 1.5rem;
 }
 
 section {
-  padding: 4rem 0;
+  padding: 1.5rem 0;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -67,8 +67,8 @@ section {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1.5rem;
+  justify-content: space-between;
+  padding: 0.1rem 0.5rem;
 }
 
 .brand-logo {
@@ -77,21 +77,28 @@ section {
 }
 
 .main-nav {
-  background: var(--white);
-  border-bottom: 1px solid var(--sand);
-  box-shadow: 0 8px 22px rgba(47, 43, 45, 0.05);
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .main-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 0;
   display: flex;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   font-weight: 600;
   color: var(--deep-mauve);
+}
+
+.main-nav li {
+  display: inline-flex;
 }
 
 .main-nav a {
@@ -109,8 +116,9 @@ section {
 .hero {
   background: linear-gradient(140deg, rgba(205, 214, 196, 0.3), rgba(255, 255, 255, 0.9));
   border-radius: var(--radius);
-  padding: 4rem;
+  padding: 2rem;
   box-shadow: var(--shadow);
+  margin-top: 1.5rem;
 }
 
 .intro-banner {
@@ -131,29 +139,31 @@ section {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(247, 245, 241, 0.92), rgba(107, 123, 88, 0.18));
+  z-index: 0;
 }
 
 .banner-content {
   position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 1);
   padding: 1.8rem 2.6rem;
   border-radius: var(--radius);
   color: var(--deep-mauve);
   border: 1px solid var(--orchid);
   box-shadow: 0 14px 26px rgba(220, 213, 219, 0.32);
+  z-index: 1;
 }
 
 .banner-content h2 {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
 }
 
 .banner-content p {
   margin: 0.6rem 0 0;
-  color: var(--text-muted);
+  color: rgba(107, 123, 88, 0.92);
   font-size: 1.05rem;
   letter-spacing: 0.03em;
 }
@@ -161,7 +171,7 @@ section {
 .hero-inner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2.5rem;
+  gap: 2.2rem;
   align-items: center;
 }
 
@@ -323,27 +333,49 @@ section > p {
 }
 
 .benefits .card:nth-child(1) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/2.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/2.png");
+  background-position: center;
 }
 
 .benefits .card:nth-child(2) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/3.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/3.png");
+  background-position: top right;
+  background-size: 145%;
 }
 
 .benefits .card:nth-child(3) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/4.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/4.png");
+  background-position: bottom left;
+  background-size: 135%;
 }
 
 .benefits .card:nth-child(4) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/5.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/5.png");
+  background-position: center right;
+  background-size: 150%;
 }
 
 .benefits .card:nth-child(5) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/6.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/6.png");
+  background-position: top center;
 }
 
 .benefits .card:nth-child(6) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.86), rgba(247, 244, 241, 0.86)), url("assets/container%20backgrounds/7.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/7.png");
+  background-position: bottom center;
+  background-size: 140%;
+}
+
+.benefits .card:nth-child(7) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/8.png");
+  background-position: center left;
+  background-size: 150%;
+}
+
+.benefits .card:nth-child(8) {
+  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/9.png");
+  background-position: top left;
+  background-size: 140%;
 }
 
 .tech-highlight,
@@ -360,6 +392,30 @@ form {
 
 form {
   margin: 0;
+}
+
+.contact-grid form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-grid form h3 {
+  margin: 0 0 1rem;
+  color: var(--deep-mauve);
+}
+
+.contact-grid form label {
+  display: block;
+  margin: 1.2rem 0 0.35rem;
+}
+
+.contact-grid form label:first-of-type {
+  margin-top: 0;
+}
+
+.contact-grid form button {
+  margin-top: 1.2rem;
+  align-self: flex-start;
 }
 
 .contact-grid {
@@ -426,7 +482,16 @@ footer p {
 
   .header-inner {
     flex-direction: column;
+    gap: 0.75rem;
     text-align: center;
+  }
+
+  .main-nav {
+    margin-left: 0;
+  }
+
+  .main-nav ul {
+    justify-content: center;
   }
 
   .brand-logo {
@@ -479,18 +544,18 @@ footer p {
   <header class="site-header" id="top">
     <div class="header-inner">
       <img src="assets/heal-u-wellness-logo.png" alt="Heal U Wellness red light therapy logo" class="brand-logo">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#bookings">Bookings</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#benefits">Benefits</a></li>
-      <li><a href="#treatments">Treatments</a></li>
-      <li><a href="#technology">Technology</a></li>
-      <li><a href="#bookings">Bookings</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
   <div class="intro-banner">
     <div class="banner-content">
@@ -523,7 +588,7 @@ footer p {
         </div>
         <div class="stat-block">
           <span class="value">4-6x</span>
-          <span>Faster recovery</span>
+          <span>No recovery time needed</span>
         </div>
         <div class="stat-block">
           <span class="value">92%</span>
@@ -532,7 +597,7 @@ footer p {
       </div>
     </section>
 
-    <section id="benefits">
+    <section id="benefits" class="benefits">
       <h2>Benefits of Red Light Therapy</h2>
       <div class="container">
         <div class="card">Boosts collagen production for firmer, brighter skin.</div>
