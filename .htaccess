@@ -1,0 +1,13 @@
+# Heal U Wellness: one canonical address for every page
+# https://www.healuwellness.co.za/
+
+RewriteEngine On
+
+# http -> https, and bare domain -> www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.healuwellness.co.za/$1 [R=301,L]
+
+# /index.html -> /
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://www.healuwellness.co.za/ [R=301,L]

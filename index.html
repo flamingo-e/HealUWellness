@@ -3,7 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heal U Wellness</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNTFYKD85T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SNTFYKD85T');
+  </script>
+
+  <title>Heal U Wellness - Red Light Therapy Durbanville</title>
+  <meta name="description" content="Heal U Wellness offers medical-grade red and near-infrared light therapy in Durbanville Hills. Treatments for weight loss, skin regeneration, athletic recovery and more.">
+  <link rel="canonical" href="https://www.healuwellness.co.za/">
+  <meta property="og:title" content="Heal U Wellness - Red Light Therapy Durbanville">
+  <meta property="og:description" content="Medical-grade red and near-infrared light therapy in Durbanville Hills. Revive. Rejuvenate. Restore.">
+  <meta property="og:url" content="https://www.healuwellness.co.za/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Heal U Wellness">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:image" content="https://www.healuwellness.co.za/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Client relaxing under red light therapy at Heal U Wellness">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "@id": "https://www.healuwellness.co.za/#business",
+    "name": "Heal U Wellness",
+    "description": "Red and near-infrared light therapy studio in Durbanville Hills, Cape Town, offering treatments for pain and inflammation, skin regeneration, athletic recovery, weight loss and well-being.",
+    "url": "https://www.healuwellness.co.za/",
+    "logo": "https://www.healuwellness.co.za/heal-u-wellness-logo.png",
+    "image": "https://www.healuwellness.co.za/og-image.jpg",
+    "telephone": "+27724822593",
+    "email": "Debbie@healuwellness.co.za",
+    "priceRange": "R100 - R2250",
+    "currenciesAccepted": "ZAR",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Morgenster Street",
+      "addressLocality": "Durbanville Hills",
+      "addressRegion": "Western Cape",
+      "postalCode": "7550",
+      "addressCountry": "ZA"
+    },
+    "areaServed": ["Durbanville", "Cape Town"],
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": "https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512"
+    }
+  }
+  </script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
 /* Heal U Wellness - Soft Sage & Mauve Accent Palette */
 
@@ -11,14 +69,17 @@
   --cream: #f7f4f1;
   --petal: #f5f6f2;
   --blush: #e6ebdf;
-  --orchid: #dcd4db; /* neutral mauve accent */
+  --orchid: #dcd4db;
   --mauve: #bfb6bd;
-  --deep-mauve: #6b7b58; /* grounded sage */
+  --deep-mauve: #7a8e6d; /* soft sage green */
+  --accent-sage: #8ba882;
+  --accent-plum: #b88fb5;
+  --accent-peach: #f4c2a6;
   --sand: #dfe7d2;
   --white: #ffffff;
   --charcoal: #2f2b2d;
   --text-muted: #70776a;
-  --shadow: 0 18px 38px rgba(107, 123, 88, 0.16);
+  --shadow: 0 18px 38px rgba(122, 142, 109, 0.16);
   --radius: 18px;
 }
 
@@ -28,12 +89,39 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   margin: 0;
-  background: linear-gradient(180deg, #f0f5ed 0%, #dbe8d2 55%, #c3d6bd 100%);
+  background: linear-gradient(180deg, #c8d9c0 0%, #dbe8d2 55%, #f0f5ed 100%);
   color: var(--charcoal);
-  line-height: 1.6;
+  line-height: 1.7;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(184, 143, 181, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(139, 168, 130, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(244, 194, 166, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 img {
@@ -49,17 +137,69 @@ a {
 
 main {
   padding: 0 1.5rem 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 section {
-  padding: 1.5rem 0;
-  max-width: 1100px;
+  padding: 3rem 1.5rem;
+  max-width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+
+section:not(:last-of-type)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(122, 142, 109, 0.1), transparent);
+}
+
+section > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home {
+  background: transparent;
+  padding: 2rem 1.5rem;
+}
+
+#benefits {
+  background: linear-gradient(180deg, rgba(219, 232, 210, 0.3), rgba(240, 245, 237, 0.4));
+  position: relative;
+}
+
+#treatments {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#bundles {
+  background: linear-gradient(180deg, rgba(244, 194, 166, 0.08), rgba(247, 212, 192, 0.12));
+}
+
+#technology {
+  background: linear-gradient(180deg, rgba(139, 168, 130, 0.08), rgba(219, 232, 210, 0.15));
+}
+
+#bookings {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#contact {
+  background: linear-gradient(180deg, rgba(220, 212, 219, 0.15), rgba(184, 143, 181, 0.08));
 }
 
 .site-header {
   background: var(--petal);
   border-bottom: 1px solid var(--blush);
+  position: relative;
+  z-index: 10;
 }
 
 .header-inner {
@@ -68,12 +208,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.2rem 0.5rem;
+  padding: 0.1rem 0.5rem;
 }
 
 .brand-logo {
-  width: 208px;
-  min-width: 160px;
+  width: 160px;
+  min-width: 140px;
 }
 
 .main-nav {
@@ -90,15 +230,18 @@ section {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: flex-end;
   flex-wrap: wrap;
-  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   color: var(--deep-mauve);
+  letter-spacing: 0.03em;
 }
 
 .main-nav li {
   display: inline-flex;
+  position: relative;
 }
 
 .main-nav a {
@@ -113,22 +256,68 @@ section {
   color: var(--charcoal);
 }
 
+.main-nav .dropdown {
+  position: relative;
+}
+
+.main-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white);
+  border: 1px solid var(--blush);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  min-width: 160px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 100;
+  margin-top: 0.5rem;
+}
+
+.main-nav .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.main-nav .dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  border-radius: 0;
+  white-space: nowrap;
+}
+
+.main-nav .dropdown-menu a:hover {
+  background: var(--blush);
+  border-radius: 0;
+}
+
 .hero {
-  background: linear-gradient(140deg, rgba(205, 214, 196, 0.3), rgba(255, 255, 255, 0.9));
+  background: linear-gradient(135deg, rgba(139, 168, 130, 0.15), rgba(244, 194, 166, 0.15), rgba(255, 255, 255, 0.95));
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: var(--shadow);
+  margin-top: 2rem;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  overflow: hidden;
 }
 
-.intro-banner {
-  position: relative;
-  background: url("assets/hero-orchid-banner.png") center/cover no-repeat;
-  min-height: 260px;
-  margin: 2.5rem auto 0;
-  max-width: 1100px;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 18px 42px rgba(107, 123, 88, 0.2);
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(184, 143, 181, 0.1), transparent);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .hero-inner {
@@ -138,11 +327,21 @@ section {
   align-items: center;
 }
 
-.hero-copy h2 {
+.hero-copy h1 {
   font-size: 2.4rem;
+  line-height: 1.2;
   margin: 0 0 1rem;
   color: var(--deep-mauve);
   letter-spacing: 0.01em;
+}
+
+.hero-copy .tagline {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-plum);
 }
 
 .hero-copy .lead {
@@ -165,19 +364,37 @@ section {
   padding: 0.85rem 1.8rem;
   border-radius: 999px;
   border: none;
-  background: var(--deep-mauve);
+  background: linear-gradient(135deg, #8ba882, #7a8e6d);
   color: var(--white);
   font-weight: 600;
   letter-spacing: 0.02em;
-  box-shadow: 0 12px 24px rgba(107, 123, 88, 0.22);
+  box-shadow: 0 12px 24px rgba(122, 142, 109, 0.3);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
 }
 
 .btn:hover,
 .btn:focus {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 36px rgba(107, 123, 88, 0.26);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 36px rgba(122, 142, 109, 0.4);
+  background: linear-gradient(135deg, #9ab991, #8ba882);
 }
 
 .btn-outline {
@@ -189,7 +406,7 @@ section {
 
 .btn-outline:hover,
 .btn-outline:focus {
-  background: rgba(107, 123, 88, 0.1);
+  background: rgba(122, 142, 109, 0.1);
 }
 
 .hero-card {
@@ -212,39 +429,169 @@ section {
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 3rem;
+  padding: 3rem 1.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  position: relative;
+}
+
+.stat-blocks::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(122, 142, 109, 0.1), transparent);
 }
 
 .stat-block {
   min-width: 160px;
-  background: var(--white);
-  border: 1px solid var(--blush);
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(139, 168, 130, 0.05));
+  border: 2px solid transparent;
+  background-clip: padding-box;
   border-radius: var(--radius);
   padding: 1.2rem 1.4rem;
   text-align: center;
   box-shadow: 0 12px 24px rgba(205, 214, 196, 0.22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.stat-block::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  padding: 2px;
+  background: linear-gradient(135deg, var(--accent-sage), var(--accent-plum));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.stat-block:hover {
+  transform: scale(1.08) translateY(-5px);
+  box-shadow: 0 18px 36px rgba(122, 142, 109, 0.35);
+}
+
+.stat-block:hover::after {
+  opacity: 1;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  color: var(--deep-mauve);
+  margin-bottom: 0.8rem;
+  stroke-width: 2;
+}
+
+.benefit-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 0;
+  max-width: 100%;
+  padding: 3rem 1.5rem;
+  background: rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+
+.benefit-icons::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(122, 142, 109, 0.1), transparent);
+}
+
+.benefit-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  min-width: 120px;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.benefit-icon-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  color: var(--deep-mauve);
+  stroke-width: 1.5;
+}
+
+.benefit-icon-item span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .stat-block .value {
   font-size: 2rem;
   font-weight: 700;
   color: var(--deep-mauve);
+  display: block;
 }
 
 .stat-block span:last-child {
   color: var(--text-muted);
   font-size: 0.9rem;
+  display: block;
 }
 
 section > h2 {
   font-size: 2rem;
   margin: 0 0 1.5rem;
   color: var(--deep-mauve);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+section > h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-sage), var(--accent-plum));
+  border-radius: 2px;
 }
 
 section > p {
   color: var(--text-muted);
   max-width: 620px;
+}
+
+#technology > p {
+  max-width: 100%;
 }
 
 .container {
@@ -259,6 +606,75 @@ section > p {
   gap: 1.2rem;
 }
 
+#bundles .container {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: flex-start;
+  max-width: 1100px;
+}
+
+#bundles .card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.5rem;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#bundles .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-sage), var(--accent-plum));
+}
+
+#bundles .card:nth-child(1)::before {
+  background: linear-gradient(90deg, #b88fb5, #d4a5d1);
+}
+
+#bundles .card:nth-child(2)::before {
+  background: linear-gradient(90deg, #f4c2a6, #f7d4c0);
+}
+
+#bundles .card:nth-child(3)::before {
+  background: linear-gradient(90deg, #8ba882, #a5c29e);
+}
+
+#bundles .card:nth-child(4)::before {
+  background: linear-gradient(90deg, #9db5a8, #b8cfc3);
+}
+
+#bundles .card:nth-child(5)::before {
+  background: linear-gradient(90deg, #c5a8b8, #d9c2d0);
+}
+
+#bundles .card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#bundles .card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+#bundles .card p:last-of-type {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#bundles .card .btn {
+  width: 100%;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
 .card {
   background: var(--white);
   border-radius: var(--radius);
@@ -266,12 +682,32 @@ section > p {
   border: 1px solid var(--blush);
   color: var(--text-muted);
   box-shadow: 0 16px 30px rgba(171, 185, 159, 0.12);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--radius);
+  padding: 1px;
+  background: linear-gradient(135deg, var(--accent-sage), var(--accent-peach), var(--accent-plum));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 40px rgba(171, 185, 159, 0.16);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(139, 168, 130, 0.25);
+}
+
+.card:hover::after {
+  opacity: 1;
 }
 
 .card h3 {
@@ -282,6 +718,15 @@ section > p {
 .card ul {
   margin: 0;
   padding-left: 1.1rem;
+}
+
+#treatments .card {
+  display: flex;
+  flex-direction: column;
+}
+
+#treatments .card .btn {
+  margin-top: auto !important;
 }
 
 .benefits .card {
@@ -295,52 +740,111 @@ section > p {
   background-repeat: no-repeat;
   padding: 1.6rem;
   backdrop-filter: blur(1px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-image 0.3s ease;
+}
+
+.benefits .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(122, 142, 109, 0.25);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .benefits .card:nth-child(1) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/2.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("2.webp");
   background-position: center;
+  animation-delay: 0.1s;
+}
+
+.benefits .card:nth-child(1):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("2.webp");
 }
 
 .benefits .card:nth-child(2) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/3.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("3.webp");
   background-position: top right;
   background-size: 145%;
+  animation-delay: 0.2s;
+}
+
+.benefits .card:nth-child(2):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("3.webp");
 }
 
 .benefits .card:nth-child(3) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/4.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("4.webp");
   background-position: bottom left;
   background-size: 135%;
+  animation-delay: 0.3s;
+}
+
+.benefits .card:nth-child(3):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("4.webp");
 }
 
 .benefits .card:nth-child(4) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/5.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("5.webp");
   background-position: center right;
   background-size: 150%;
+  animation-delay: 0.4s;
+}
+
+.benefits .card:nth-child(4):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("5.webp");
 }
 
 .benefits .card:nth-child(5) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/6.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("6.webp");
   background-position: top center;
+  animation-delay: 0.5s;
+}
+
+.benefits .card:nth-child(5):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("6.webp");
 }
 
 .benefits .card:nth-child(6) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/7.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("7.webp");
   background-position: bottom center;
   background-size: 140%;
+  animation-delay: 0.6s;
+}
+
+.benefits .card:nth-child(6):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("7.webp");
 }
 
 .benefits .card:nth-child(7) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/8.png");
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("8.webp");
   background-position: center left;
   background-size: 150%;
+  animation-delay: 0.7s;
+}
+
+.benefits .card:nth-child(7):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("8.webp");
 }
 
 .benefits .card:nth-child(8) {
-  background-image: linear-gradient(rgba(247, 244, 241, 0.72), rgba(247, 244, 241, 0.72)), url("assets/container%20backgrounds/9.png");
-  background-position: top left;
-  background-size: 140%;
+  background-image: linear-gradient(rgba(247, 244, 241, 0.45), rgba(247, 244, 241, 0.45)), url("6.webp");
+  background-position: center;
+  background-size: cover;
+  animation-delay: 0.8s;
+}
+
+.benefits .card:nth-child(8):hover {
+  background-image: linear-gradient(rgba(219, 232, 210, 0.6), rgba(219, 232, 210, 0.6)), url("6.webp");
 }
 
 .tech-highlight,
@@ -407,7 +911,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid rgba(107, 123, 88, 0.24);
+  outline: 2px solid rgba(122, 142, 109, 0.24);
 }
 
 textarea {
@@ -420,6 +924,29 @@ textarea {
   font-weight: 600;
 }
 
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  height: 250px;
+  background: url('orchid.webp') center/contain no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+#contact > * {
+  position: relative;
+  z-index: 1;
+}
+
 .membership-offer a {
   margin-top: 1rem;
 }
@@ -429,6 +956,21 @@ footer {
   color: var(--white);
   text-align: center;
   padding: 2.2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 50px;
+  width: 250px;
+  height: 250px;
+  background: url('orchid.webp') center/contain no-repeat;
+  opacity: 0.15;
+  pointer-events: none;
+  transform: rotate(-15deg);
 }
 
 footer a {
@@ -438,6 +980,8 @@ footer a {
 
 footer p {
   margin: 0.4rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -476,23 +1020,40 @@ footer p {
     justify-content: center;
   }
 
-  .intro-banner {
-    margin-top: 2rem;
-    min-height: 220px;
+  #bundles .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #bundles .card {
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 200px;
   }
 }
 
 @media (max-width: 520px) {
   main {
-    padding: 0 1rem 3rem;
+    padding: 0 0 3rem;
   }
 
   section {
-    padding: 3rem 0;
+    padding: 2rem 1rem;
   }
 
   .benefits .container {
     grid-template-columns: 1fr;
+  }
+
+  #bundles .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  #bundles .card {
+    width: 100%;
+    min-height: auto;
   }
 
   .btn,
@@ -500,59 +1061,101 @@ footer p {
     width: 100%;
   }
 }
+
+/* Cursor Trail Effect */
+.cursor-trail {
+  position: fixed;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 100, 100, 0.6), rgba(255, 150, 100, 0.3), transparent);
+  mix-blend-mode: screen;
+  animation: fadeTrail 0.8s ease-out forwards;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeTrail {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+}
   </style>
 </head>
 <body>
   <header class="site-header" id="top">
     <div class="header-inner">
-      <img src="assets/heal-u-wellness-logo.png" alt="Heal U Wellness red light therapy logo" class="brand-logo">
+      <img src="heal-u-wellness-logo.webp" alt="Heal U Wellness red light therapy logo" class="brand-logo">
       <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#treatments">Treatments</a></li>
-          <li><a href="#technology">Technology</a></li>
-          <li><a href="#bookings">Bookings</a></li>
+          <li class="dropdown">
+            <a href="#treatments">Treatments</a>
+            <div class="dropdown-menu">
+              <a href="#bundles">Bundles</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#technology">Technology</a>
+            <div class="dropdown-menu">
+              <a href="research.html">Research</a>
+            </div>
+          </li>
+          <li><a href="booking.html">Bookings</a></li>
+          <li><a href="waiver.html">Waiver</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <div class="intro-banner"></div>
-
   <main>
     <section id="home" class="hero">
       <div class="hero-inner">
         <div class="hero-copy">
-          <h2>Revive. Rejuvenate. Restore.</h2>
+          <p class="tagline">Revive. Rejuvenate. Restore.</p>
+          <h1>Red Light Therapy in Durbanville Hills</h1>
           <p class="lead">Experience a wellness sanctuary where state-of-the-art red light technology accelerates recovery, brightens skin, and calms your nervous system in one soothing session.</p>
           <div class="cta">
-            <a href="#bookings" class="btn">Book now</a>
+            <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn">Book now</a>
             <a href="#technology" class="btn btn-outline">Why it works</a>
           </div>
         </div>
-        <div class="hero-card">
-          <h3>Now booking: Intro trio</h3>
-          <p>Three personalized sessions designed to reset your glow, soothe sore muscles, and help you settle into restorative calm.</p>
-          <p><strong>Includes:</strong> guided breathwork, tailored light intensity, and a post-session recovery roadmap.</p>
-        </div>
-      </div>
-      <div class="stat-blocks">
-        <div class="stat-block">
-          <span class="value">12 min</span>
-          <span>Average session</span>
-        </div>
-        <div class="stat-block">
-          <span class="value">4-6x</span>
-          <span>No recovery time needed</span>
-        </div>
-        <div class="stat-block">
-          <span class="value">92%</span>
-          <span>Client satisfaction</span>
+        <div class="hero-card" style="padding: 0; overflow: hidden;">
+          <img src="red-light-therapy-session.webp" alt="Client lying under a red light therapy panel wearing an eye mask" width="1000" height="500" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
       </div>
     </section>
+
+    <div class="benefit-icons">
+      <div class="benefit-icon-item">
+        <img src="sun.webp" width="70" height="70" loading="lazy" alt="Anti-inflammatory" class="benefit-icon">
+        <span>Anti-inflammatory effects</span>
+      </div>
+      <div class="benefit-icon-item">
+        <img src="moon.webp" width="70" height="70" loading="lazy" alt="Circadian balance" class="benefit-icon">
+        <span>Circadian balance</span>
+      </div>
+      <div class="benefit-icon-item">
+        <img src="recovery.webp" width="70" height="70" loading="lazy" alt="Skin rejuvenation" class="benefit-icon">
+        <span>Skin rejuvenation</span>
+      </div>
+      <div class="benefit-icon-item">
+        <img src="drop.webp" width="70" height="70" loading="lazy" alt="Muscle recovery" class="benefit-icon">
+        <span>Muscle recovery</span>
+      </div>
+      <div class="benefit-icon-item">
+        <img src="energy.webp" width="70" height="70" loading="lazy" alt="Energy boost" class="benefit-icon">
+        <span>Energy boost</span>
+      </div>
+    </div>
 
     <section id="benefits" class="benefits">
       <h2>What can Red Light Therapy do for you?</h2>
@@ -568,58 +1171,183 @@ footer p {
       </div>
     </section>
 
+    <div class="stat-blocks">
+      <div class="stat-block">
+        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <span class="value">15 min Average session</span>
+      </div>
+      <div class="stat-block">
+        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        <span class="value">No recovery time needed</span>
+      </div>
+      <div class="stat-block">
+        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        <span class="value">SAHPRA Approved</span>
+      </div>
+    </div>
+
     <section id="treatments">
-      <h2>Signature Sessions</h2>
+      <h2>Our Treatment Options</h2>
       <div class="container">
         <div class="card">
-          <h3>Glow Reset</h3>
-          <p>Targeted red and near-infrared light for enhanced collagen, elasticity, and skin tone.</p>
+          <h3>Weight Loss</h3>
+          <p>20-minute sessions targeting stubborn areas. Best results with 10-12 treatments over 3-4 weeks.</p>
           <ul>
-            <li>Ideal before events or photo sessions</li>
-            <li>Boosts complexion clarity</li>
-            <li>Pairs well with lymphatic drainage</li>
+            <li>Accelerates metabolism</li>
+            <li>Reduces fat cell size</li>
+            <li>5-session package available</li>
           </ul>
+          <p><strong>From R500</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
         </div>
         <div class="card">
-          <h3>Recover Strong</h3>
-          <p>Deep-tissue protocol to accelerate muscle repair and reduce aches after workouts.</p>
+          <h3>Athletic Recovery</h3>
+          <p>15-minute post-training sessions. Athletes typically benefit from 8-10 treatments over 2-3 weeks.</p>
           <ul>
-            <li>Relieves soreness and stiffness</li>
-            <li>Supports endurance training cycles</li>
-            <li>Custom light intensity per zone</li>
+            <li>Speeds muscle repair</li>
+            <li>Reduces inflammation</li>
+            <li>Optimal for training cycles</li>
           </ul>
+          <p><strong>R500</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
         </div>
         <div class="card">
-          <h3>Calm & Restore</h3>
-          <p>Nervous system reset with guided breathwork, soundscapes, and restorative light.</p>
+          <h3>Soft Tissue Injury</h3>
+          <p>Quick 5-10 minute targeted treatments. Most injuries respond well to 6-8 sessions over 2 weeks.</p>
           <ul>
-            <li>Balances cortisol levels</li>
-            <li>Encourages deep relaxation</li>
-            <li>Complements meditation practice</li>
+            <li>Accelerates healing</li>
+            <li>Reduces pain and swelling</li>
+            <li>Supports tissue regeneration</li>
           </ul>
+          <p><strong>R100 - R200</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
+        </div>
+        <div class="card">
+          <h3>Pain & Inflammation Relief</h3>
+          <p>10-15 minute relief sessions. Chronic conditions see lasting improvements with 8-12 treatments over 3-4 weeks.</p>
+          <ul>
+            <li>Reduces chronic pain</li>
+            <li>Calms inflammation</li>
+            <li>Improves mobility</li>
+            <li>5-session package available</li>
+          </ul>
+          <p><strong>R250</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
+        </div>
+        <div class="card">
+          <h3>Wound Healing</h3>
+          <p>Focused 5-10 minute sessions per treatment area. Plan for 5-7 treatments over 1-2 weeks depending on severity.</p>
+          <ul>
+            <li>Promotes faster healing</li>
+            <li>Reduces scarring</li>
+            <li>Enhances tissue repair</li>
+          </ul>
+          <p><strong>R100 - R200</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
+        </div>
+        <div class="card">
+          <h3>Skin Regeneration</h3>
+          <p>Relaxing 10-minute facial treatments. Visible collagen and texture improvements appear with 8-10 sessions over 3-4 weeks.</p>
+          <ul>
+            <li>Boosts collagen production</li>
+            <li>Improves skin texture</li>
+            <li>Reduces fine lines</li>
+            <li>5-session package available</li>
+          </ul>
+          <p><strong>R200</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
+        </div>
+        <div class="card">
+          <h3>Mental Well-being</h3>
+          <p>Calming 10-15 minute mindfulness sessions. Mental health benefits deepen with 10-15 consistent treatments over 4-6 weeks.</p>
+          <ul>
+            <li>Calms nervous system</li>
+            <li>Reduces stress and anxiety</li>
+            <li>Improves mood balance</li>
+            <li>5-session package available</li>
+          </ul>
+          <p><strong>R250</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
+        </div>
+        <div class="card">
+          <h3>Post-Surgical Recovery</h3>
+          <p>Gentle 10-15 minute recovery sessions. Post-op healing accelerates with 6-8 treatments over 2 weeks.</p>
+          <ul>
+            <li>Speeds healing post-surgery</li>
+            <li>Reduces swelling</li>
+            <li>Supports tissue regeneration</li>
+            <li>5-session package available</li>
+          </ul>
+          <p><strong>R250</strong></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn" style="margin-top: 1rem; display: inline-block;">Book now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="bundles">
+      <h2>Treatment Bundles</h2>
+      <p style="max-width: 100%; margin-bottom: 2rem;">Save 10% when you purchase 5 sessions. Add your chosen service to your cart, Fresha will ask you if you'd like to make it a bundle. All bundles are valid for 6 months.</p>
+      <div class="container">
+        <div class="card">
+          <h3>Pain & Inflammation Bundle</h3>
+          <p>5 sessions targeting chronic pain and inflammation.</p>
+          <p><strong>R1,125</strong> <span style="color: var(--text-muted); font-size: 0.9rem;">(save R125)</span></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn">Book bundle</a>
+        </div>
+        <div class="card">
+          <h3>Skin Regeneration Bundle</h3>
+          <p>5 sessions for radiant, rejuvenated skin.</p>
+          <p><strong>R900</strong> <span style="color: var(--text-muted); font-size: 0.9rem;">(save R100)</span></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn">Book bundle</a>
+        </div>
+        <div class="card">
+          <h3>Mental Well-Being Bundle</h3>
+          <p>5 sessions to calm your nervous system and reduce stress.</p>
+          <p><strong>R1,125</strong> <span style="color: var(--text-muted); font-size: 0.9rem;">(save R125)</span></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn">Book bundle</a>
+        </div>
+        <div class="card">
+          <h3>Post-Surgery Recovery Bundle</h3>
+          <p>5 sessions to accelerate healing after surgery.</p>
+          <p><strong>R1,125</strong> <span style="color: var(--text-muted); font-size: 0.9rem;">(save R125)</span></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn">Book bundle</a>
+        </div>
+        <div class="card">
+          <h3>Weight Loss Bundle</h3>
+          <p>5 sessions to accelerate metabolism and reduce fat cell size.</p>
+          <p><strong>R2,250</strong> <span style="color: var(--text-muted); font-size: 0.9rem;">(save R250)</span></p>
+          <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn">Book bundle</a>
         </div>
       </div>
     </section>
 
     <section id="technology">
       <h2>Inside Our Technology</h2>
-      <p>Our medical-grade panels combine red (660 nm) and near-infrared (850 nm) wavelengths to activate your mitochondria and stimulate circulation exactly where your body needs it.</p>
-      <div class="tech-highlight">
-        <p><strong>Dual spectrum delivery:</strong> Calibrated light penetrates multiple tissue depths to trigger cellular repair while our smart cooling keeps every session comfortable.</p>
-      </div>
-    </section>
-    <section>
-      <h2>Membership Perks</h2>
-      <ul>
-        <li>Preferred scheduling and session rollover</li>
-        <li>Complimentary monthly wellness consult</li>
-        <li>Exclusive infrared contrast therapy pop-ups</li>
-        <li>Member pricing on add-on services and retail</li>
-      </ul>
-      <div class="membership-offer">
-        <h3>Founding Member Special</h3>
-        <p>Lock in 4 sessions monthly and save 20% for the first six months.</p>
-        <a href="#bookings" class="btn">Claim offer</a>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <p>Our medical-grade panels combine red (660 nm) and near-infrared (850 nm) wavelengths to activate your mitochondria and stimulate circulation exactly where your body needs it.</p>
+
+          <h3 style="color: var(--deep-mauve); margin-top: 2rem; margin-bottom: 1rem;">The Science</h3>
+          <p>Red light therapy works at the cellular level by stimulating cytochrome c oxidase, a key enzyme in your mitochondria. This process:</p>
+          <ul style="line-height: 1.8; color: var(--text-muted);">
+            <li><strong>Boosts ATP production</strong> - Your cells create more energy for healing and regeneration</li>
+            <li><strong>Reduces oxidative stress</strong> - Protects cells from damage and promotes longevity</li>
+            <li><strong>Increases blood flow</strong> - Delivers oxygen and nutrients throughout your body</li>
+            <li><strong>Modulates inflammation</strong> - Supports natural recovery without side effects</li>
+          </ul>
+          <p style="margin-top: 1.5rem;">The dual-wavelength approach ensures both surface-level and deep tissue benefits, making it effective for everything from skin health to muscle recovery and mental wellness.</p>
+        </div>
+        <div class="tech-highlight" style="padding: 0; overflow: hidden;">
+          <img src="red-light-therapy-bed.webp" alt="Red and near-infrared LED panel above a treatment bed" width="1200" height="800" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </div>
       </div>
     </section>
 
@@ -627,10 +1355,10 @@ footer p {
       <h2>Book Your Session</h2>
       <p>Choose your experience online in under a minute, or call us to craft a custom protocol.</p>
       <div class="cta">
-        <a href="#" class="btn">View availability</a>
+        <a href="https://www.fresha.com/book-now/heal-u-wellness-oq3bak8i/all-offer?share=true&pId=2724512" target="_blank" rel="noopener" class="btn">View availability</a>
         <a href="tel:0724822593" class="btn btn-outline">Call 072 482 2593</a>
+        <a href="https://wa.me/27724822593" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
       </div>
-      <p>New to red light therapy? Ask about our intro trio for first-timers.</p>
     </section>
 
     <section id="contact">
@@ -638,17 +1366,17 @@ footer p {
       <div class="contact-grid">
         <div class="contact-card">
           <h3>Durbanville Hills Studio</h3>
-          <p>2 Morgenster Rd<br>Durbanville Hills, 7550</p>
+          <p>2 Morgenster Street<br>Durbanville Hills, 7550</p>
           <p><a href="mailto:Debbie@healuwellness.co.za">Debbie@healuwellness.co.za</a><br><a href="tel:0724822593">072 482 2593</a></p>
         </div>
-        <form>
+        <form action="https://formspree.io/f/xkgdqzlr" method="POST">
           <h3>Ask anything</h3>
           <label for="name">Name</label>
-          <input id="name" type="text" name="name" placeholder="Your name">
+          <input id="name" type="text" name="name" placeholder="Your name" required>
           <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="Your email">
+          <input id="email" type="email" name="email" placeholder="Your email" required>
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+          <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
           <button type="submit" class="btn">Send message</button>
         </form>
       </div>
@@ -657,11 +1385,33 @@ footer p {
 
   <footer>
     <p>&copy; <span id="year"></span> Heal U Wellness. All rights reserved.</p>
-    <p><a href="#top" class="btn btn-outline">Back to top</a></p>
+    <p><a href="#top">Back to top</a></p>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Cursor Trail Effect
+    let throttle = false;
+    document.addEventListener('mousemove', (e) => {
+      if (throttle) return;
+      throttle = true;
+
+      setTimeout(() => {
+        throttle = false;
+      }, 30);
+
+      const trail = document.createElement('div');
+      trail.className = 'cursor-trail';
+      trail.style.left = e.pageX + 'px';
+      trail.style.top = e.pageY + 'px';
+
+      document.body.appendChild(trail);
+
+      setTimeout(() => {
+        trail.remove();
+      }, 800);
+    });
   </script>
 </body>
 </html>
