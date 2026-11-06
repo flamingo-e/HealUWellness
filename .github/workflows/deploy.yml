@@ -23,7 +23,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./
-          server-dir: ./public_html/
+          # The FTP login opens in the healuwellness.co.za folder, which is the site root.
+          server-dir: ./
           exclude: |
             **/.git*
             **/.git*/**
